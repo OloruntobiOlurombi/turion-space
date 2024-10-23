@@ -10,7 +10,10 @@ resource "aws_eks_cluster" "eks_cluster" {
     subnet_ids = [
       aws_subnet.eks_private_1.id,
       aws_subnet.eks_private_2.id,
-      aws_subnet.eks_private_3.id
+      aws_subnet.eks_private_3.id,
+      aws_subnet.eks_public_1.id,
+      aws_subnet.eks_public_2.id,
+      aws_subnet.eks_public_3.id
     ]
   }
 
@@ -72,7 +75,6 @@ resource "aws_ebs_volume" "volume_space"{
     size = 40
     encrypted = true
     type = "gp2"
-    #kms_key_id = aws_kms_key.ebs_encryption_key.arn
 }
 
 
