@@ -36,8 +36,3 @@ output "eks_vpc_id" {
   value = aws_vpc.eks_vpc.id
   description = "The ID of the EKS VPC"
 }
-
-# output "eks_private_subnet_ids" {
-#   value = aws_subnet.eks_private[*].id
-#   description = "The IDs of the private subnets for EKS"
-# }

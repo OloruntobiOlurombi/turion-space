@@ -151,28 +151,7 @@ variable "on_prem_vpc_cidr" {
     description = "VPC for On prem cidr block"
     type = string 
 }
-#"10.1.1.0/24"
-# variable "eks_public_subnets_cidr" {
-#     description = "Cidr Block public Subnet for eks"
-#     type = list(string) 
-# }
 
-#"10.1.2.0/24"
-# variable "eks_private_subnets_cidr" {
-#     description = "Cidr Block private Subnet for eks"
-#     type = list(string) 
-# }
+variable "eks_vpc_tags" {}
 
-# 10.2.1.0/24
-# variable "onprem_subnet_cidr" {
-#     description = "Cidr Block Subnet for onprem"
-#     type = string 
-# }
-
-variable "eks_vpc_tags" {
-  
-}
-
-variable "on_prem_vpc_tags" {
-  
-}
+variable "on_prem_vpc_tags" {}

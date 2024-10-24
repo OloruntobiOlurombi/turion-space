@@ -21,7 +21,6 @@ resource "aws_route_table" "public_rt" {
   }
 }
 
-
 # Provides a resource to create a private route table 
 resource "aws_route_table" "private_rt" {
     vpc_id = aws_vpc.eks_vpc.id
@@ -53,7 +52,6 @@ resource "aws_nat_gateway" "k8s-nat" {
     }
     depends_on = [aws_internet_gateway.igw]
 }
-
 
 # Provides a resource to create an association between a route table and Public subnets
 resource "aws_route_table_association" "public_subnet_association_1" {
