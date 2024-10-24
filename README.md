@@ -170,7 +170,8 @@ On the "Find and Import Dashboards for Common Applications" section, input the d
 - Click "Import" to load the dashboard.
 
 17. **View dashboard**
-<img width="1184" alt="Screenshot 2024-10-24 at 01 53 51" src="https://github.com/user-attachments/assets/70a1cd98-b991-42f3-970d-be4d0df1b9d7">
+
+<img width="1188" alt="Screenshot 2024-10-24 at 02 09 37" src="https://github.com/user-attachments/assets/4ea87f8f-49dc-4119-97aa-04b6b65afeb6">
 
 
 ## Future Integration with On-Premises Environment
