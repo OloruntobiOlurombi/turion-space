@@ -17,3 +17,5 @@ resource "aws_route" "on_prem_to_eks" {
     vpc_peering_connection_id = aws_vpc_peering_connection.vpc_peering.id
     depends_on = [aws_route_table.private_rt]
 }
+
+

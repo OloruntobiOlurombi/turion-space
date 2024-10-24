@@ -14,15 +14,6 @@ resource "aws_route_table" "public_rt" {
   route {
         cidr_block = "0.0.0.0/0"
         gateway_id = aws_internet_gateway.igw.id
-        #carrier_gateway_id         = ""
-        #destination_prefix_list_id = ""
-        #egress_only_gateway_id     = ""
-        #ipv6_cidr_block            = ""
-        #local_gateway_id           = ""
-        #network_interface_id       = ""
-        #transit_gateway_id         = ""
-        #vpc_endpoint_id            = ""
-        #vpc_peering_connection_id  = ""
     }
   
   tags = {
@@ -38,16 +29,6 @@ resource "aws_route_table" "private_rt" {
     route {
         cidr_block = "0.0.0.0/0"
         nat_gateway_id = aws_nat_gateway.k8s-nat.id
-        #carrier_gateway_id         = ""
-        #destination_prefix_list_id = ""
-        #egress_only_gateway_id     = ""
-        #gateway_id                 = ""
-        #ipv6_cidr_block            = ""
-        #local_gateway_id           = ""
-        #network_interface_id       = ""
-        #transit_gateway_id         = ""
-        #vpc_endpoint_id            = ""
-        #vpc_peering_connection_id  = ""
     }
 
     tags = {
@@ -56,7 +37,6 @@ resource "aws_route_table" "private_rt" {
 
 }
 
-
 # Provides a resource to create a NAT Gateway
 resource "aws_eip" "nat" {
     domain = "vpc"
@@ -64,7 +44,6 @@ resource "aws_eip" "nat" {
         Name = var.tags_nat
     }
 }
-
 
 resource "aws_nat_gateway" "k8s-nat" {
     allocation_id = aws_eip.nat.id 

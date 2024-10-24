@@ -16,7 +16,6 @@ resource "aws_vpc" "on_prem_vpc" {
   }
 }
 
-
 # Provides an VPC Public subnet resource
 resource "aws_subnet" "eks_public_1" {
   vpc_id = aws_vpc.eks_vpc.id

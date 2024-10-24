@@ -54,6 +54,5 @@ module "eks_cluster" {
   on_prem_vpc_cidr = var.on_prem_vpc_cidr 
   on_prem_vpc_tags = var.on_prem_vpc_tags
   eks_vpc_tags = var.eks_vpc_tags
-  
 }
 
