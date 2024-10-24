@@ -117,6 +117,7 @@ spec:
 ```bash
 kubectl apply -f prometheus-service.yaml
 ```
+<img width="1191" alt="Screenshot 2024-10-24 at 01 38 26" src="https://github.com/user-attachments/assets/03858aeb-c459-43b7-badd-80c41c7d877f">
 
 10. **Grafana Helm chart Repository**
 ```bash
@@ -169,6 +170,7 @@ On the "Find and Import Dashboards for Common Applications" section, input the d
 - Click "Import" to load the dashboard.
 
 17. **View dashboard**
+<img width="1184" alt="Screenshot 2024-10-24 at 01 53 51" src="https://github.com/user-attachments/assets/70a1cd98-b991-42f3-970d-be4d0df1b9d7">
 
 
 ## Future Integration with On-Premises Environment
